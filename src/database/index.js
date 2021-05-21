@@ -1,0 +1,18 @@
+
+
+const mongoose = require('mongoose');
+
+const stringConnection = "";
+
+mongoose.connect(stringConnection, { useMongoClient: true});
+
+var db = mongoose.connection;
+
+db.on('erro', console.error);
+
+db.once('open', function(){
+    console.log('Conectado ao banco de dados');
+});
+
+mongoose.Promise = global.Promise;
+module.exports = mongoose;
