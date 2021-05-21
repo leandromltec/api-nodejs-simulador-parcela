@@ -1,0 +1,19 @@
+{
+  "name": "simulador_parcela",
+  "version": "1.0.0",
+  "description": "API de acesso ao App Flutter Simulador de Parcelas",
+  "main": "src/index.js",
+  "scripts": {
+      "dev": "nodemon src/index.js",
+      "start": "node src/index.js"
+  },
+  "author": "Leandro Loureiro",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
