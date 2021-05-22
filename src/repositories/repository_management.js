@@ -1,5 +1,4 @@
 
-
- function getAllManagement(resultsAllManagement){
+function getAllManagement(resultsAllManagement){
   return resultsAllManagement;
 }

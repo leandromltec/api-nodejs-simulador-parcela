@@ -3,9 +3,6 @@
 var management = require('../repositories/repository_management');
 
 const express = require('express');
-
-//const Gerencia = require("../models/model_gerencia");
-
 const mongoose = require('../database');
 
 const router = express.Router();

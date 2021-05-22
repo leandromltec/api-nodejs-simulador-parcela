@@ -3,7 +3,6 @@
 /* Linkedin - https://www.linkedin.com/in/leandro-loureiro-dev/ */
 /* Github - https://github.com/leandromltec */
 
-
 const express = require('express');
 
 const bodyParser = require('body-parser');

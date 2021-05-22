@@ -5,11 +5,9 @@ const mongoose = require('mongoose');
 const stringConnection = "";
 
 mongoose.connect(stringConnection);
-
 var db = mongoose.connection;
 
 db.on('erro', console.error);
-
 db.once('open', function(){
     console.log('Conectado ao banco de dados');
 });
