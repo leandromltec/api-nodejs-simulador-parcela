@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 const stringConnection = "";
 
-mongoose.connect(stringConnection, { useMongoClient: true});
+mongoose.connect(stringConnection);
 
 var db = mongoose.connection;
 

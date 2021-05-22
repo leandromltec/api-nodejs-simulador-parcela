@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const GerenciaSchema = new mongoose.Schema({
 
     id: {
-        type: Int32,
+        type: String,
         unique: true
 
     },
