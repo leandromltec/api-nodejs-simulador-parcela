@@ -4,17 +4,24 @@
   "description": "API de acesso ao App Flutter Simulador de Parcelas",
   "main": "src/index.js",
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "start": "node src/index.js"
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts"
   },
   "author": "Leandro Loureiro",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "express": "^4.17.1",
+    "jwt-simple": "^0.5.6",
     "mongodb": "^3.6.7",
-    "mongoose": "^5.12.10"
+    "mongoose": "^5.12.10",
+    "passport-jwt": "^4.0.0",
+    "tsc": "^2.0.3"
   },
-   "devDependencies": {
-    "nodemon": "^2.0.7"
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "nodemon": "^2.0.7",
+    "ts-node": "^10.0.0",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.3.3"
   }
 }

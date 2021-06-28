@@ -2,7 +2,8 @@
 
 const mongoose = require('mongoose');
 
-const stringConnection = "";
+const stringConnection = "mongodb+srv://db_admin:aA455055@cluster0.rrjti.mongodb.net/db_simulador_parcela?retryWrites=true&w=majority"
+
 
 mongoose.connect(stringConnection);
 var db = mongoose.connection;

@@ -5,6 +5,7 @@ var management = require('../repositories/repository_management');
 const express = require('express');
 const mongoose = require('../database');
 
+
 const router = express.Router();
 
 var db = mongoose.connection;
@@ -20,7 +21,8 @@ router.get('/', async (request, response) => {
     await collectionManagement.find().toArray((errorCollection, results) => {
         if (errorCollection === null) {
             try {
-               
+                const query = request.query;
+
                 return response.status(200).json(results);
             }
             catch (errorAllManagement) {
@@ -33,9 +35,22 @@ router.get('/', async (request, response) => {
         else
             return response.status(400).json({ error: "Erro collection managements (mongodb). (Português: Erro na coleção de gerência (mongodb)" + errorCollection })
     })
+});
+
+
+/*router.post("/inserir", async(request, response) =>{
+
 
 });
 
+
+router.put('/atualizar/:id', async(request, response) => {
+
+});
+
+router.delete('/deletar/:id', async(request, response) => {
+    
+});*/
 
 
 //Chamada de rotas relacionadas as requisições de gerencia
