@@ -15,9 +15,9 @@ db.once('open', () => {
 
 router.get('/', async (request, response) => {
 
-    const query = parseInt(request.query["management"]);
+    const queryIdmanagement = parseInt(request.query["management"]);
 
-    await collectionInstallation.find({'id_management':{'$eq': query}}).toArray((errorCollection, results) => {
+    await collectionInstallation.find({'id_management':{'$eq': queryIdmanagement}}).toArray((errorCollection, results) => {
         if (errorCollection === null) {
             try {
                 

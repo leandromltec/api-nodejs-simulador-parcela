@@ -17,8 +17,9 @@ app.use(express.json());
 //Decodifica os parâmetros da URL
 app.use(express.urlencoded({ extended: false}));
 
-require('./controllers/controller_gerencia')(app);
+require('./controllers/controller_management')(app);
 require('./controllers/controller_installation')(app);
+require('./controllers/controller_operational')(app);
 require('./controllers/controller_usuario')(app);
 //require('./repositories/passport')(passport);
 

@@ -2,8 +2,7 @@
 
 const mongoose = require('mongoose');
 
-const stringConnection = "String de conexão"
-
+const stringConnection = "String";
 
 mongoose.connect(stringConnection);
 var db = mongoose.connection;

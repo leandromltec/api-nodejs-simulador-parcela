@@ -13,7 +13,7 @@ var db = mongoose.connection;
 var collectionManagement;
 
 db.once('open', () => {
-    collectionManagement = db.collection('coll_gerencia')
+    collectionManagement = db.collection('coll_management')
 })
 
 router.get('/', async (request, response) => {
@@ -54,4 +54,4 @@ router.delete('/deletar/:id', async(request, response) => {
 
 
 //Chamada de rotas relacionadas as requisições de gerencia
-module.exports = app => app.use('/gerencia', router);
+module.exports = app => app.use('/management', router);
